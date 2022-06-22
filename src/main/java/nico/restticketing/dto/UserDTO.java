@@ -1,23 +1,23 @@
 package nico.restticketing.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import nico.restticketing.enums.Gender;
-import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
-
-import javax.validation.constraints.*;
+import lombok.Setter;
 
 @NoArgsConstructor
-@AllArgsConstructor
-@ToString
-
+@Getter
+@Setter
 public class UserDTO {
 
     private Long id;
     private String firstName;
     private String lastName;
     private String userName;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String passWord;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String confirmPassWord;
     private boolean enabled;
     private String phone;

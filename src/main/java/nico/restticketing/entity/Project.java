@@ -1,6 +1,5 @@
 package nico.restticketing.entity;
 
-
 import nico.restticketing.enums.Status;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

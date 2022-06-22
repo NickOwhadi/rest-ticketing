@@ -1,5 +1,7 @@
 package nico.restticketing.dto;
 
+import lombok.Getter;
+import lombok.Setter;
 import nico.restticketing.enums.Status;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +12,8 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class TaskDTO {
 
     private Long id;
